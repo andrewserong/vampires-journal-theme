@@ -1,10 +1,55 @@
 {
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 2,
 	"settings": {
 		"appearanceTools": true,
+		"color": {
+			"palette": [
+				{
+					"name": "Gloom",
+					"slug": "gloom",
+					"color": "#1a1818"
+				},
+				{
+					"name": "Blood",
+					"slug": "blood",
+					"color": "#ba2920"
+				},
+				{
+					"name": "Moon",
+					"slug": "moon",
+					"color": "#c6c2a1"
+				},
+				{
+					"name": "White",
+					"slug": "white",
+					"color": "#ffffff"
+				}
+			],
+			"link": true
+		},
 		"layout": {
 			"contentSize": "640px",
 			"wideSize": "1280px"
+		}
+	},
+	"styles": {
+		"blocks": {
+			"core/site-title": {
+				"color": {
+					"link": "var(--wp--preset--color--blood)"
+				}
+			}
+		},
+		"color": {
+			"background": "var(--wp--preset--color--white)",
+			"text": "var(--wp--preset--color--gloom)"
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--dm-sans)",
+			"fontSize": "var(--wp--preset--font-size--normal)",
+			"letterSpacing": "var(--wp--custom--typography--letter-spacing--body)",
+			"lineHeight": "var(--wp--custom--typography--line-height--body)"
 		}
 	}
 }
