@@ -1,0 +1,5 @@
+{
+	"core": null,
+	"plugins": [ "../gutenberg" ],
+	"themes": [ "." ]
+}
