@@ -31,13 +31,56 @@
 		"layout": {
 			"contentSize": "640px",
 			"wideSize": "1280px"
+		},
+		"typography": {
+			"customFontSize": true,
+			"lineHeight": true,
+			"fontFamilies": [
+				{
+					"fontFamily": "\"Tulpen One\", \"Arial Narrow\", Arial, sans-serif",
+					"slug": "tulpen-one",
+					"name": "Tulpen One",
+					"google": "family=Tulpen+One&display=swap"
+				},
+				{
+					"fontFamily": "\"EB Garamond\", Georgia, Times, \"Times New Roman\", serif",
+					"slug": "eb-garamond",
+					"name": "EB Garamond",
+					"google": "family=EB+Garamond:ital@0;1&display=swap"
+				}
+			],
+			"fontSizes": [
+				{
+					"size": "1rem",
+					"slug": "small"
+				},
+				{
+					"size": "1.4rem",
+					"slug": "medium"
+				},
+				{
+					"size": "3rem",
+					"slug": "large"
+				},
+				{
+					"size": "4rem",
+					"slug": "x-large"
+				}
+			]
 		}
 	},
 	"styles": {
 		"blocks": {
 			"core/site-title": {
-				"color": {
-					"link": "var(--wp--preset--color--blood)"
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--tulpen-one)",
+					"textTransform": "uppercase"
+				}
+			},
+			"core/navigation": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--tulpen-one)",
+					"textTransform": "uppercase"
 				}
 			}
 		},
@@ -45,11 +88,63 @@
 			"background": "var(--wp--preset--color--white)",
 			"text": "var(--wp--preset--color--gloom)"
 		},
+		"elements": {
+			"h1": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--tulpen-one)",
+					"fontSize": "var(--wp--preset--font-size--x-large)",
+					"fontWeight": "400",
+					"textTransform": "uppercase"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--tulpen-one)",
+					"fontSize": "var(--wp--preset--font-size--large)",
+					"fontWeight": "400",
+					"textTransform": "uppercase"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--eb-garamond)",
+					"fontSize": "var(--wp--preset--font-size--medium)",
+					"fontWeight": "400"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--eb-garamond)",
+					"fontSize": "var(--wp--preset--font-size--medium)",
+					"fontWeight": "400"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--eb-garamond)",
+					"fontSize": "var(--wp--preset--font-size--medium)",
+					"fontWeight": "400"
+				}
+			},
+			"h6": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--eb-garamond)",
+					"fontSize": "var(--wp--preset--font-size--medium)",
+					"fontWeight": "400"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--blood)"
+				},
+				"typography": {
+					"textDecoration": "none"
+				}
+			}
+		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--dm-sans)",
-			"fontSize": "var(--wp--preset--font-size--normal)",
-			"letterSpacing": "var(--wp--custom--typography--letter-spacing--body)",
-			"lineHeight": "var(--wp--custom--typography--line-height--body)"
+			"fontFamily": "var(--wp--preset--font-family--eb-garamond)",
+			"fontSize": "var(--wp--preset--font-size--medium)"
 		}
 	}
 }
