@@ -40,11 +40,11 @@ add_action( 'wp_enqueue_scripts', 'vampires_journal_scripts' );
  */
 
 function vampires_journal_fonts_url() {
-	if ( ! class_exists( 'WP_Theme_JSON_Resolver_Gutenberg' ) ) {
+	if ( ! class_exists( 'WP_Theme_JSON_Resolver' ) ) {
 		return '';
 	}
 
-	$theme_data = WP_Theme_JSON_Resolver_Gutenberg::get_merged_data()->get_settings();
+	$theme_data = WP_Theme_JSON_Resolver::get_merged_data()->get_settings();
 	if ( empty( $theme_data ) || empty( $theme_data['typography'] ) || empty( $theme_data['typography']['fontFamilies'] ) ) {
 		return '';
 	}
